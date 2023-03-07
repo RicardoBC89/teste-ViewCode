@@ -7,12 +7,14 @@
 
 import UIKit
 
-class segundaViewController: UIViewController {
+class SegundaViewController: UIViewController {
+    
     
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         view.backgroundColor = .yellow
-        
+       
         
     }
 }
