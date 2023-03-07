@@ -9,11 +9,13 @@ import UIKit
 
 class SegundaViewController: UIViewController {
     
+    private let segundaView = SegundaView()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
+        view = segundaView
+        
        
         
     }

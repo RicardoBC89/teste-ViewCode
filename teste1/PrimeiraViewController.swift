@@ -7,7 +7,7 @@
 
 import UIKit
 
-class primeiraViewController: UIViewController {
+class PrimeiraViewController: UIViewController {
     
     private let primeiraView = PrimeiraView()
 
@@ -17,6 +17,7 @@ class primeiraViewController: UIViewController {
         super.viewDidLoad()
         view = primeiraView
         viewConstraints()
+        primeiraView.delegate = self
     }
     
     func viewConstraints() {
@@ -32,3 +33,10 @@ class primeiraViewController: UIViewController {
     }
 }
 
+extension PrimeiraViewController: NavegacaoTelasDelegate {
+    func delegateAction() {
+        self.navigationController?.pushViewController(SegundaViewController(), animated: true)
+    }
+    
+    
+}

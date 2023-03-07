@@ -6,3 +6,8 @@
 //
 
 import Foundation
+import UIKit
+
+protocol NavegacaoTelasDelegate: AnyObject {
+    func delegateAction()
+}

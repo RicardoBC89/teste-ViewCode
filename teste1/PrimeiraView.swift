@@ -10,6 +10,8 @@ import UIKit
 
 class PrimeiraView: UIView {
     
+    public weak var delegate: NavegacaoTelasDelegate?
+    
     private lazy var welcomeLabel: UILabel = {
        let label = UILabel()
        label.text = "Bem vindo ao APP"
@@ -53,6 +55,7 @@ class PrimeiraView: UIView {
     
     @objc func tappedButton(_ sender: UIButton) {
         print("Esta funcionando")
+        delegate?.delegateAction()
     }
     
     func addSubview() {

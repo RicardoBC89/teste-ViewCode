@@ -18,6 +18,7 @@
 		CE5118D029B1224A007FF8A7 /* SegundaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5118CF29B1224A007FF8A7 /* SegundaViewController.swift */; };
 		CE51191629B77540007FF8A7 /* PrimeiraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51191529B77540007FF8A7 /* PrimeiraView.swift */; };
 		CE51191829B7754F007FF8A7 /* SegundaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51191729B7754F007FF8A7 /* SegundaView.swift */; };
+		CE51191A29B77C77007FF8A7 /* NavegacaoTelasDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51191929B77C77007FF8A7 /* NavegacaoTelasDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CE5118CF29B1224A007FF8A7 /* SegundaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaViewController.swift; sourceTree = "<group>"; };
 		CE51191529B77540007FF8A7 /* PrimeiraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeiraView.swift; sourceTree = "<group>"; };
 		CE51191729B7754F007FF8A7 /* SegundaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaView.swift; sourceTree = "<group>"; };
+		CE51191929B77C77007FF8A7 /* NavegacaoTelasDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavegacaoTelasDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				CE51189F29B0C6A2007FF8A7 /* SceneDelegate.swift */,
 				CE5118CF29B1224A007FF8A7 /* SegundaViewController.swift */,
 				CE51191729B7754F007FF8A7 /* SegundaView.swift */,
+				CE51191929B77C77007FF8A7 /* NavegacaoTelasDelegate.swift */,
 				CE5118CD29B0C741007FF8A7 /* PrimeiraViewController.swift */,
 				CE51191529B77540007FF8A7 /* PrimeiraView.swift */,
 				CE5118A629B0C6A7007FF8A7 /* Assets.xcassets */,
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE51191A29B77C77007FF8A7 /* NavegacaoTelasDelegate.swift in Sources */,
 				CE51189E29B0C6A2007FF8A7 /* AppDelegate.swift in Sources */,
 				CE5118A029B0C6A2007FF8A7 /* SceneDelegate.swift in Sources */,
 				CE5118CE29B0C741007FF8A7 /* PrimeiraViewController.swift in Sources */,
