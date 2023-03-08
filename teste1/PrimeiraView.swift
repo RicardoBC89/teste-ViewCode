@@ -1,13 +1,14 @@
 //
-//  primeiraViewController.swift
+//  primeiraView.swift
 //  teste1
 //
-//  Created by User on 02/03/23.
+//  Created by User on 07/03/23.
 //
 
+import Foundation
 import UIKit
 
-class primeiraViewController: UIViewController {
+class PrimeiraView: UIView {
     
     private lazy var welcomeLabel: UILabel = {
        let label = UILabel()
@@ -37,32 +38,33 @@ class primeiraViewController: UIViewController {
         return button
     }()
     
-    @objc func tappedButton(_ sender: UIButton) {
-        print("Esta funcionando")
-        
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .red
+    init() {
+        super.init(frame: .zero)
+        backgroundColor = .red
         addSubview()
         welcomeLabelConstraint()
         introductionLabelConstraint()
         buttomConstraint()
-        
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc func tappedButton(_ sender: UIButton) {
+        print("Esta funcionando")
     }
     
     func addSubview() {
-        view.addSubview(welcomeLabel)
-        view.addSubview(introductionLabel)
-        view.addSubview(buttom)
+        addSubview(welcomeLabel)
+        addSubview(introductionLabel)
+        addSubview(buttom)
     }
     
     func welcomeLabelConstraint() {
         let constraint = [
-            welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            welcomeLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -60)]
+            welcomeLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            welcomeLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: -60)]
         
         constraint.forEach { (item) in
             item.isActive = true
@@ -71,7 +73,7 @@ class primeiraViewController: UIViewController {
     
     func introductionLabelConstraint() {
         let constraint = [
-            introductionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            introductionLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             introductionLabel.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 30)]
         
         constraint.forEach {(item) in
@@ -81,7 +83,7 @@ class primeiraViewController: UIViewController {
     
     func buttomConstraint() {
         let constraint = [
-            buttom.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            buttom.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             buttom.topAnchor.constraint(equalTo: introductionLabel.bottomAnchor, constant: 70),
             buttom.heightAnchor.constraint(equalToConstant: 100),
             buttom.widthAnchor.constraint(equalToConstant: 100)]
@@ -91,4 +93,3 @@ class primeiraViewController: UIViewController {
         }
     }
 }
-
